@@ -7,27 +7,29 @@ package com.auth.webserver;
 
 import java.security.Principal;
 import java.util.Objects;
+import javax.security.auth.Subject;
 
 /**
  *
  * @author clwn1
  */
-public class RolePrincipal implements Principal {
-    
-    String roleName;
+public class UserPrincipal implements Principal {
 
-    public RolePrincipal(String roleName) {
-        this.roleName = roleName;
+    String userName;
+
+    public UserPrincipal(String username) {
+        this.userName = username;
     }
-    
+
+
     @Override
     public String getName() {
-        return roleName;
+        return userName;
     }
 
     @Override
-    public int hashCode() {
-        return roleName.hashCode();
+    public String toString() {
+        return "UserPrincipal{" + "username=" + userName + '}';
     }
 
     @Override
@@ -41,20 +43,16 @@ public class RolePrincipal implements Principal {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final RolePrincipal other = (RolePrincipal) obj;
-        if (!Objects.equals(this.roleName, other.roleName)) {
+        final UserPrincipal other = (UserPrincipal) obj;
+        if (!Objects.equals(this.userName, other.userName)) {
             return false;
         }
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "RolePrincipal{" + "roleName=" + roleName + '}';
+    
+    public int hashCode(){
+        return userName.hashCode();
     }
-    
-    
-    
-    
     
 }
