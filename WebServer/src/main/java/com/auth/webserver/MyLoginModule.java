@@ -5,12 +5,16 @@
  */
 package com.auth.webserver;
 
-import data_treatment.ReadUserPasswd;
+import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import javax.security.auth.Subject;
+import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth.callback.NameCallback;
+import javax.security.auth.callback.PasswordCallback;
+import javax.security.auth.callback.UnsupportedCallbackException;
 import javax.security.auth.login.LoginException;
 import javax.security.auth.spi.LoginModule;
 
@@ -29,7 +33,7 @@ public class MyLoginModule implements LoginModule {
     
 
     @Override
-    public void initialize(Subject sbjct, CallbackHandler cbh, Map aSharedState, Map aOptions) {
+    public void initialize(Subject sbjct, CallbackHandler cbh, Map sharedState, Map options) {
        
        handler = cbh;
        subject = sbjct;
@@ -68,18 +72,69 @@ public class MyLoginModule implements LoginModule {
     
     @Override
     public boolean login() throws LoginException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Callback[] callbacks = new Callback[2];
+        callbacks[0] = new NameCallback("login");
+        callbacks[1] = new PasswordCallback("password", true);
+        
+        try{
+            
+            handler.handle(callbacks);
+            //agafem lo que l'usuari ens proporciona per el formulari
+            String name = ((NameCallback) callbacks[0]).getName();
+            String password = String.valueOf(((PasswordCallback)callbacks[1]).getPassword());
+            
+            if (!readUserPasswd.getUsersPasswd().containsKey(name)){
+                throw new LoginException("Authentication failed");
+            }else{
+                int pepper = 0;
+                boolean found = false;
+                UserInfo user = readUserPasswd.getUsersPasswd().get(name);
+                while (pepper < 1000 && !found){
+                    
+                    String sha512 = SHA512(password, String.valueOf(pepper), user.getSalt());
+                    
+                    if(sha512.equals(user.getHash())){
+                        login = name;
+                        found = true;
+                    }
+                    pepper++;
+                }
+                if (!found){
+                    throw new LoginException("Authentication failed");
+                }
+                return true;
+            }
+        }catch(IOException e){
+            throw new LoginException(e.getMessage());
+        }catch(UnsupportedCallbackException e){
+            throw new LoginException(e.getMessage());
+        }
     }
 
     @Override
     public boolean commit() throws LoginException {
         
         try{
-            //UserInfo userActual = readUserPasswd.getUsersPasswd()
-        }catch(Exception e){
             
+            UserInfo userActual = readUserPasswd.getUsersRoles().get(login);
+            String user = userActual.getUser();
+            
+            UserPrincipal userPrin = new UserPrincipal(user);
+            subject.getPrincipals().add(userPrin);
+            
+            String rolActual = userActual.getRol();
+            //fem aixo per el cas de que tingui més d'un rol
+            String[] parts =rolActual.split(",");
+            
+            for(String rolAct: parts){
+                RolePrincipal rol = new RolePrincipal(rolAct);
+                subject.getPrincipals().add(rol);
+            }
+            
+            return true;
+        }catch(Exception e){
+            throw new LoginException(e.getMessage());
         }
-        return false;
     }
 
     /**

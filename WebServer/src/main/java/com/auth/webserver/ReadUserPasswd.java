@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package data_treatment;
+package com.auth.webserver;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,8 +20,13 @@ public class ReadUserPasswd {
     File fitxer = null;
     FileReader lector = null;
     BufferedReader buffer = null;
+   
+    File fitxer2 = null;
+    FileReader lector2 = null;
+    BufferedReader buffer2 = null;
     
     HashMap<String, UserInfo> usersPasswd = null;
+    HashMap<String, UserInfo> usersRoles = null;
     
     public ReadUserPasswd(){
         
@@ -60,6 +65,43 @@ public class ReadUserPasswd {
                 e2.getMessage();
             }
         }
+        
+        
+        try{
+            //obertura de fitxers i creació del buffer per poder
+            //fer una lectura comode
+            fitxer2 = new File("/home/clwn1/apache-tomcat-9.0.37/users/users_info.txt");
+            lector2 = new FileReader(fitxer2);
+            buffer2 = new BufferedReader(lector2);
+            usersRoles = new HashMap<String, UserInfo>();
+            
+            //lectura del fitxer
+            String linia;
+            while((linia = buffer2.readLine()) != null){
+                String[] Parts = linia.split(":");
+                String user = Parts[0];
+                String login = Parts[1];
+                String rol = Parts[2];
+                UserInfo user2 = new UserInfo(user, login, rol, ".");
+                
+                usersRoles.put(login, user2);
+                
+            }
+            
+            
+        }catch(IOException e){
+            e.getMessage();
+        }finally{
+            //aqui tanquem el fitxer, per asegurar-nos que es tanca
+            // tant si va tot bé com si salta un exception
+            try{
+                if(lector2 != null){
+                    lector2.close();
+                }
+            }catch(IOException e2){
+                e2.getMessage();
+            }
+        }
     }
     
     public HashMap<String, UserInfo> getUsersPasswd(){
@@ -67,4 +109,8 @@ public class ReadUserPasswd {
     }
     
     //posiblement hagi de fer un per als rols? idk bro
+    public HashMap<String, UserInfo> getUsersRoles() {
+        return usersRoles;
+    }
+    
 }
