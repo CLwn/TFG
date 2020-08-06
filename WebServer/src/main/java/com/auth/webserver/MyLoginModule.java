@@ -149,7 +149,29 @@ public class MyLoginModule implements LoginModule {
 
     @Override
     public boolean logout() throws LoginException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        try{
+            
+            UserInfo userActual = readUserPasswd.getUsersRoles().get(login);
+            String user = userActual.getUser();
+            
+            UserPrincipal userPrin = new UserPrincipal(user);
+            subject.getPrincipals().remove(userPrin);
+            
+            String rolActual = userActual.getRol();
+            //fem aixo per el cas de que tingui més d'un rol
+            String[] parts =rolActual.split(",");
+            
+            for(String rolAct: parts){
+                RolePrincipal rol = new RolePrincipal(rolAct);
+                subject.getPrincipals().remove(rol);
+            }
+            
+            return true;
+        }catch(Exception e){
+            throw new LoginException(e.getMessage());
+        }
+    
     }
     
 }
