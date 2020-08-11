@@ -13,7 +13,7 @@
     </head>
     <body bgcolor="white">
 Invalid user name and/or password, please try
-<a href='<%= response.encodeURL(application.getContextPath() + "/index.jsp") %>'>again</a>.
+<a href="login.jsp") %>'>again</a>.
 </body>
 </html>
 
