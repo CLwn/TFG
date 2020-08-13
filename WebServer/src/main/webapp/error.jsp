@@ -12,8 +12,8 @@
         <title>Error</title>
     </head>
     <body bgcolor="white">
-Invalid user name and/or password, please try
-<a href="login.jsp") %>'>again</a>.
+Usuari o contrasenya invàlida,
+<a href="admin.jsp") %>Tornar</a>.
 </body>
 </html>
 

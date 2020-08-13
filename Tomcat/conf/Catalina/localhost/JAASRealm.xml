@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="C:\Users\marc_\Documents\NetBeansProjects\JAASRealm\target\JAASRealm-1.0-SNAPSHOT" path="/JAASRealm">
+  <Realm className="org.apache.catalina.realm.CombinedRealm">
+    <Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="root" connectionPassword="root" connectionURL="jdbc:mysql://localhost:3306/webserver" driverName="com.mysql.jdbc.Driver" roleNameCol="role" userCredCol="passwd" userNameCol="username" userRoleTable="roles" userTable="users"/>
+    <Realm appName="LoginMouleTest" className="org.apache.catalina.realm.JAASRealm" roleClassNames="RolePrincipal" userClassNames="UserPrincipal"/>
+  </Realm>
+</Context>
