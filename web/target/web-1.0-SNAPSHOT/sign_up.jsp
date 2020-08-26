@@ -13,6 +13,5 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <img src="img\qrCode.jpg" style="width:100px; height:100px">
     </body>
 </html>

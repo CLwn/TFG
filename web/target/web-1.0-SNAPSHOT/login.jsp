@@ -34,6 +34,5 @@
     </tr>
   </table>
 </form>
-    <img src="img\qrCode.jpg">
 </body>
 </html>

@@ -8,6 +8,7 @@ package tfg.web;
 import java.io.Serializable;
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
@@ -16,6 +17,7 @@ import javax.validation.constraints.*;
 
 @Entity
 @Table (name = "users")
+@XmlRootElement
 
 public class User implements Serializable{
     @Id @GeneratedValue (strategy=GenerationType.AUTO)
@@ -27,7 +29,29 @@ public class User implements Serializable{
     private String username;
     @Column (name = "passwd")
     private String passwd;
-    
-    // faltaria tot lo del jpa hauré de llegirme demà com anava tot
+
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
+    }
+
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPasswd() {
+        return passwd;
+    }
     
 }
