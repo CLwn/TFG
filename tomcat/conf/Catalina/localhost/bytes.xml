@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="/home/clwn1/Escritorio/urv/jaas-authentication-in-tomcat-example/com-byteslounge-jaas/target/com-byteslounge-jaas-1.0-SNAPSHOT" path="/bytes">
+  <Realm appName="BytesLoungeLogin" className="org.apache.catalina.realm.JAASRealm" roleClassNames="com.byteslounge.jaas.RolePrincipal" userClassNames="com.byteslounge.jaas.UserPrincipal"/>
+</Context>
