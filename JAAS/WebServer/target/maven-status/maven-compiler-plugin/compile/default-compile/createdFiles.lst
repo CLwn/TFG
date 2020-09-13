@@ -1,0 +1,5 @@
+com/auth/webserver/ReadUserPasswd.class
+com/auth/webserver/UserPrincipal.class
+com/auth/webserver/RolePrincipal.class
+com/auth/webserver/UserInfo.class
+com/auth/webserver/MyLoginModule.class
