@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.security.auth.Subject;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
@@ -17,7 +19,7 @@ import javax.security.auth.callback.PasswordCallback;
 import javax.security.auth.callback.UnsupportedCallbackException;
 import javax.security.auth.login.LoginException;
 import javax.security.auth.spi.LoginModule;
-
+import java.sql.*;
 /**
  *
  * @author clwn1
@@ -28,7 +30,10 @@ public class MyLoginModule implements LoginModule {
     private CallbackHandler handler;
     private Subject subject;
     private String login;
-    private ReadUserPasswd readUserPasswd = null;
+   /** private String username;
+    private String password;
+    **/
+    private ReadUserPasswd readUserPasswd; 
 
     
 
@@ -37,8 +42,9 @@ public class MyLoginModule implements LoginModule {
        
        handler = cbh;
        subject = sbjct;
-       
-       //recupera l'informació dels fitxers de passwd
+       /**username = "";
+       password = "";
+       **/
        readUserPasswd = new ReadUserPasswd();
        
     }
@@ -73,28 +79,35 @@ public class MyLoginModule implements LoginModule {
     @Override
     public boolean login() throws LoginException {
         Callback[] callbacks = new Callback[2];
-        callbacks[0] = new NameCallback("login");
+        callbacks[0] = new NameCallback("username");
         callbacks[1] = new PasswordCallback("password", true);
         
         try{
             
             handler.handle(callbacks);
+           /**
             //agafem lo que l'usuari ens proporciona per el formulari
-            String name = ((NameCallback) callbacks[0]).getName();
-            String password = String.valueOf(((PasswordCallback)callbacks[1]).getPassword());
+            username = ((NameCallback) callbacks[0]).getName();
+            password = String.valueOf(((PasswordCallback)callbacks[1]).getPassword());
+           
+            DB_access conn = new DB_access();
             
-            if (!readUserPasswd.getUsersPasswd().containsKey(name)){
+            if(conn.SearchValues(name,password))return true;
+            **/
+            String username = ((NameCallback) callbacks[0]).getName();
+            String password = String.valueOf(((PasswordCallback)callbacks[1]).getPassword());
+            if (!readUserPasswd.getUsersPasswd().containsKey(username)){
                 throw new LoginException("Authentication failed");
             }else{
                 int pepper = 0;
                 boolean found = false;
-                UserInfo user = readUserPasswd.getUsersPasswd().get(name);
+                UserInfo user = readUserPasswd.getUsersPasswd().get(username);
                 while (pepper < 1000 && !found){
                     
                     String sha512 = SHA512(password, String.valueOf(pepper), user.getSalt());
                     
                     if(sha512.equals(user.getHash())){
-                        login = name;
+                        login = username;
                         found = true;
                     }
                     pepper++;
@@ -108,14 +121,22 @@ public class MyLoginModule implements LoginModule {
             throw new LoginException(e.getMessage());
         }catch(UnsupportedCallbackException e){
             throw new LoginException(e.getMessage());
+       /** } catch (SQLException ex) {
+            Logger.getLogger(MyLoginModule.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return false;**/
+        }//aquest s'ha de treure
     }
 
     @Override
     public boolean commit() throws LoginException {
         
         try{
+            /**DB_access conn = new DB_access();
             
+            subject.getPrincipals().add(new UserPrincipal(username));
+            subject.getPrincipals().add(new RolePrincipal(conn.SearchRole(username)));
+            **/
             UserInfo userActual = readUserPasswd.getUsersRoles().get(login);
             String user = userActual.getUsername();
             
@@ -151,7 +172,13 @@ public class MyLoginModule implements LoginModule {
     public boolean logout() throws LoginException {
         
         try{
+           /**
+            DB_access conn = new DB_access();
             
+            subject.getPrincipals().remove(new UserPrincipal(username));
+            subject.getPrincipals().remove(new RolePrincipal(conn.SearchRole(username)));
+            **/
+           
             UserInfo userActual = readUserPasswd.getUsersRoles().get(login);
             String user = userActual.getUsername();
             

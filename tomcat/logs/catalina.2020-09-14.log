@@ -1,0 +1,661 @@
+14-Sep-2020 11:45:18.496 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor:   Apache Tomcat/9.0.37
+
+14-Sep-2020 11:45:18.500 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 30 2020 20:09:49 UTC
+14-Sep-2020 11:45:18.501 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:         9.0.37.0
+14-Sep-2020 11:45:18.501 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-Sep-2020 11:45:18.501 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.4.0-47-generic
+
+14-Sep-2020 11:45:18.501 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:          amd64
+
+14-Sep-2020 11:45:18.501 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+14-Sep-2020 11:45:18.501 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.8+10-post-Ubuntu-0ubuntu120.04
+14-Sep-2020 11:45:18.502 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:     Ubuntu
+14-Sep-2020 11:45:18.502 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 11:45:18.502 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 11:45:18.514 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Sep-2020 11:45:18.514 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Sep-2020 11:45:18.514 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/clwn1/Escritorio/TFG/tomcat/conf/logging.properties
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|clwn1-GE72-2QL
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.security.auth.login.config==/home/clwn1/Escritorio/TFG/tomcat/conf/jaas.config
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Sep-2020 11:45:18.515 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 11:45:18.516 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 11:45:18.516 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/clwn1/Escritorio/TFG/tomcat/temp
+14-Sep-2020 11:45:18.516 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.2.23] con la versión APR [1.6.5].
+14-Sep-2020 11:45:18.516 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true].
+14-Sep-2020 11:45:18.517 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14-Sep-2020 11:45:18.605 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 1.1.1f  31 Mar 2020]
+14-Sep-2020 11:45:18.909 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+14-Sep-2020 11:45:18.966 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [871] milliseconds
+14-Sep-2020 11:45:19.041 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+14-Sep-2020 11:45:19.041 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.37]
+14-Sep-2020 11:45:19.049 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+14-Sep-2020 11:45:19.097 ADVERTENCIA [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/WebServer] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has been ignored
+14-Sep-2020 11:45:19.308 ADVERTENCIA [main] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [user] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 11:45:19.386 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has finished in [336] ms
+14-Sep-2020 11:45:19.387 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/bytes.xml]
+14-Sep-2020 11:45:19.387 ADVERTENCIA [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/bytes] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/bytes.xml] has been ignored
+14-Sep-2020 11:45:19.417 ADVERTENCIA [main] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [admin] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 11:45:19.423 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/bytes.xml] has finished in [37] ms
+14-Sep-2020 11:45:19.424 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/web.xml]
+14-Sep-2020 11:45:19.439 ADVERTENCIA [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/web] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/web.xml] has been ignored
+14-Sep-2020 11:45:19.448 ADVERTENCIA [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Realm/CredentialHandler] failed to set property [keyLength] to [256]
+14-Sep-2020 11:45:19.534 ADVERTENCIA [main] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [user] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 11:45:19.544 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 11:45:19.547 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/web.xml] has finished in [123] ms
+14-Sep-2020 11:45:19.548 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/manager] de la aplicación web
+14-Sep-2020 11:45:19.634 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/manager] has finished in [86] ms
+14-Sep-2020 11:45:19.635 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/host-manager] de la aplicación web
+14-Sep-2020 11:45:19.672 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/host-manager] has finished in [36] ms
+14-Sep-2020 11:45:19.672 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/examples] de la aplicación web
+14-Sep-2020 11:45:20.154 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/examples] has finished in [481] ms
+14-Sep-2020 11:45:20.154 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/ROOT] de la aplicación web
+14-Sep-2020 11:45:20.167 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/ROOT] has finished in [13] ms
+14-Sep-2020 11:45:20.167 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/docs] de la aplicación web
+14-Sep-2020 11:45:20.197 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/docs] has finished in [30] ms
+14-Sep-2020 11:45:20.202 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Sep-2020 11:45:20.224 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [1257] milliseconds
+14-Sep-2020 11:47:17.877 ADVERTENCIA [http-nio-8080-exec-3] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [pepe]
+	javax.security.auth.login.LoginException: Authentication failed
+		at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:103)
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 11:47:25.112 ADVERTENCIA [http-nio-8080-exec-4] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [juan]
+	javax.security.auth.login.LoginException: Authentication failed
+		at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:87)
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 13:38:41.933 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/WebServer]
+14-Sep-2020 13:38:42.040 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+14-Sep-2020 13:38:42.071 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/WebServer] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has been ignored
+14-Sep-2020 13:38:42.108 GRAVE [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error durante el despliegue del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:720)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1830)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1620)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1151)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1353)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1357)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1335)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@6f142172]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4792)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4928)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+		... 24 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/clwn1/Escritorio/TFG/JAAS/WebServer/target/WebServer-1.0-SNAPSHOT] is not valid
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:751)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 28 more
+14-Sep-2020 13:38:42.110 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has finished in [70] ms
+14-Sep-2020 13:40:22.126 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/WebServer]
+14-Sep-2020 13:40:22.171 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [user] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 13:40:53.639 GRAVE [http-nio-8080-exec-10] com.auth.webserver.MyLoginModule.login null
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1365)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1188)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:90)
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 13:40:53.643 ADVERTENCIA [http-nio-8080-exec-10] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [ramon]
+	javax.security.auth.login.LoginException: Fallo en inicio de sesión: se han ignorado todos los módulos
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:871)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 13:41:07.184 GRAVE [http-nio-8080-exec-1] com.auth.webserver.MyLoginModule.login null
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1365)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1188)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:90)
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 13:41:07.186 ADVERTENCIA [http-nio-8080-exec-1] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [pepe]
+	javax.security.auth.login.LoginException: Fallo en inicio de sesión: se han ignorado todos los módulos
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:871)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 16:53:31.233 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/WebServer]
+14-Sep-2020 16:53:31.260 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+14-Sep-2020 16:53:31.261 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/WebServer] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has been ignored
+14-Sep-2020 16:53:31.284 GRAVE [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error durante el despliegue del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:720)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1830)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1620)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1151)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1353)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1357)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1335)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@53c066cd]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4792)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4928)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+		... 24 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/clwn1/Escritorio/TFG/JAAS/WebServer/target/WebServer-1.0-SNAPSHOT] is not valid
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:751)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 28 more
+14-Sep-2020 16:53:31.285 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has finished in [25] ms
+14-Sep-2020 16:53:41.286 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/WebServer]
+14-Sep-2020 16:53:41.332 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [user] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 16:59:46.968 ADVERTENCIA [http-nio-8080-exec-16] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [ramon]
+	javax.security.auth.login.LoginException: java.lang.NullPointerException
+	at com.auth.webserver.DB_access.SearchValues(DB_access.java:34)
+	at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:90)
+	at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+	at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+	at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:821)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 16:59:54.260 ADVERTENCIA [http-nio-8080-exec-26] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [pepe]
+	javax.security.auth.login.LoginException: java.lang.NullPointerException
+	at com.auth.webserver.DB_access.SearchValues(DB_access.java:34)
+	at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:90)
+	at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+	at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+	at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:821)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 17:11:15.819 ADVERTENCIA [http-nio-8080-exec-23] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [ramon]
+	javax.security.auth.login.LoginException: java.lang.NullPointerException
+	at com.auth.webserver.DB_access.SearchValues(DB_access.java:34)
+	at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:90)
+	at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+	at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+	at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:821)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 17:23:17.317 ADVERTENCIA [http-nio-8080-exec-23] org.apache.catalina.realm.JAASRealm.authenticate Excepción de Login autenticando nombre de usuario [pepe]
+	javax.security.auth.login.LoginException: java.lang.NullPointerException
+	at com.auth.webserver.DB_access.SearchValues(DB_access.java:34)
+	at com.auth.webserver.MyLoginModule.login(MyLoginModule.java:90)
+	at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:726)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+	at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+	at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+	at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+	at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+		at java.base/javax.security.auth.login.LoginContext.invoke(LoginContext.java:821)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:665)
+		at java.base/javax.security.auth.login.LoginContext$4.run(LoginContext.java:663)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at java.base/javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:663)
+		at java.base/javax.security.auth.login.LoginContext.login(LoginContext.java:574)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:418)
+		at org.apache.catalina.realm.JAASRealm.authenticate(JAASRealm.java:332)
+		at org.apache.catalina.authenticator.FormAuthenticator.doAuthenticate(FormAuthenticator.java:243)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:631)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+14-Sep-2020 17:30:02.175 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/WebServer]
+14-Sep-2020 17:30:02.219 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+14-Sep-2020 17:30:02.220 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/WebServer] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has been ignored
+14-Sep-2020 17:30:02.227 GRAVE [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error durante el despliegue del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:720)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1830)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1620)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1151)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1353)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1357)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1335)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@56d68ba4]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4792)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4928)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+		... 24 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/clwn1/Escritorio/TFG/JAAS/WebServer/target/WebServer-1.0-SNAPSHOT] is not valid
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:751)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 28 more
+14-Sep-2020 17:30:02.228 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has finished in [9] ms
+14-Sep-2020 17:30:12.229 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/WebServer]
+14-Sep-2020 17:30:12.239 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [user] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 17:32:28.118 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+14-Sep-2020 17:32:28.118 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Sep-2020 17:32:28.126 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+14-Sep-2020 17:32:28.146 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Sep-2020 17:32:28.147 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+14-Sep-2020 17:32:32.188 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor:   Apache Tomcat/9.0.37
+
+14-Sep-2020 17:32:32.197 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 30 2020 20:09:49 UTC
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:         9.0.37.0
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.4.0-47-generic
+
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:          amd64
+
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.8+10-post-Ubuntu-0ubuntu120.04
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:     Ubuntu
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 17:32:32.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 17:32:32.264 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/clwn1/Escritorio/TFG/tomcat/conf/logging.properties
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|clwn1-GE72-2QL
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.security.auth.login.config==/home/clwn1/Escritorio/TFG/tomcat/conf/jaas.config
+14-Sep-2020 17:32:32.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Sep-2020 17:32:32.266 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 17:32:32.266 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/clwn1/Escritorio/TFG/tomcat
+14-Sep-2020 17:32:32.266 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/clwn1/Escritorio/TFG/tomcat/temp
+14-Sep-2020 17:32:32.266 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.2.23] con la versión APR [1.6.5].
+14-Sep-2020 17:32:32.266 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true].
+14-Sep-2020 17:32:32.266 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14-Sep-2020 17:32:32.339 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 1.1.1f  31 Mar 2020]
+14-Sep-2020 17:32:32.759 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+14-Sep-2020 17:32:32.814 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [1114] milliseconds
+14-Sep-2020 17:32:32.908 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+14-Sep-2020 17:32:32.908 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.37]
+14-Sep-2020 17:32:32.922 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml]
+14-Sep-2020 17:32:32.958 ADVERTENCIA [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/WebServer] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has been ignored
+14-Sep-2020 17:32:33.392 ADVERTENCIA [main] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [user] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 17:32:33.464 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:33.552 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/WebServer.xml] has finished in [627] ms
+14-Sep-2020 17:32:33.552 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/bytes.xml]
+14-Sep-2020 17:32:33.553 ADVERTENCIA [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/bytes] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/bytes.xml] has been ignored
+14-Sep-2020 17:32:33.696 ADVERTENCIA [main] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [admin] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 17:32:33.705 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:33.719 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/bytes.xml] has finished in [167] ms
+14-Sep-2020 17:32:33.720 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/web.xml]
+14-Sep-2020 17:32:33.732 ADVERTENCIA [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/web] in deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/web.xml] has been ignored
+14-Sep-2020 17:32:33.737 ADVERTENCIA [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Realm/CredentialHandler] failed to set property [keyLength] to [256]
+14-Sep-2020 17:32:34.068 ADVERTENCIA [main] org.apache.catalina.startup.ContextConfig.validateSecurityRoles El nombre de papel de seguridad [user] es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-Sep-2020 17:32:34.072 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:34.074 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/clwn1/Escritorio/TFG/tomcat/conf/Catalina/localhost/web.xml] has finished in [355] ms
+14-Sep-2020 17:32:34.075 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/manager] de la aplicación web
+14-Sep-2020 17:32:34.189 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:34.193 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/manager] has finished in [118] ms
+14-Sep-2020 17:32:34.193 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/host-manager] de la aplicación web
+14-Sep-2020 17:32:34.401 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:34.403 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/host-manager] has finished in [210] ms
+14-Sep-2020 17:32:34.403 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/examples] de la aplicación web
+14-Sep-2020 17:32:34.859 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:34.872 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/examples] has finished in [469] ms
+14-Sep-2020 17:32:34.872 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/ROOT] de la aplicación web
+14-Sep-2020 17:32:34.966 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:34.967 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/ROOT] has finished in [95] ms
+14-Sep-2020 17:32:34.968 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/clwn1/Escritorio/TFG/tomcat/webapps/docs] de la aplicación web
+14-Sep-2020 17:32:35.086 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Sep-2020 17:32:35.088 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/clwn1/Escritorio/TFG/tomcat/webapps/docs] has finished in [120] ms
+14-Sep-2020 17:32:35.092 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Sep-2020 17:32:35.119 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [2303] milliseconds
+14-Sep-2020 17:51:35.941 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+14-Sep-2020 17:51:35.942 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Sep-2020 17:51:35.948 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+14-Sep-2020 17:51:36.006 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Sep-2020 17:51:36.008 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
