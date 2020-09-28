@@ -19,18 +19,20 @@ public class DB_access {
         try{
             String URL = "jdbc:mysql://localhost:3306/webserver";
             Class.forName("com.mysql.jdbc.Driver");
-            connect = (Connection) DriverManager.getConnection(URL,
-                    "root", "");
+            connect = DriverManager.getConnection(URL,
+                    "root", "root");
         }catch(ClassNotFoundException | SQLException e){
-            System.out.print("Error acces");
+            System.err.print("Error access");
         }
         return connect;
     }
     
     
     public boolean SearchValues(String name, String pass) throws SQLException{
-        String query = "SELECT username, password FROM users";
+        
         Statement statement = connect.createStatement();
+        String query = "SELECT username, password FROM users";
+        
         ResultSet resultSet = statement.executeQuery(query);
             
         while(resultSet.next()){
