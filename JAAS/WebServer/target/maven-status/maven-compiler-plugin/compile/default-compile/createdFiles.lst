@@ -1,4 +1,7 @@
-com/auth/webserver/UserPrincipal.class
-com/auth/webserver/DB_access.class
-com/auth/webserver/RolePrincipal.class
-com/auth/webserver/MyLoginModule.class
+Servlets\SignUpServlet.class
+Servlets\QRcodeServlet.class
+com\auth\webserver\MyLoginModule.class
+com\auth\webserver\QRGenerate.class
+com\auth\webserver\UserPrincipal.class
+com\auth\webserver\RolePrincipal.class
+com\auth\webserver\DB_access.class

@@ -1,0 +1,4 @@
+[2021-02-12 14:48:22] [info]  [ 8388] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-02-12 14:48:22] [info]  [ 8388] Installing service 'Tomcat9' name 'Apache Tomcat 9.0 Tomcat9'.
+[2021-02-12 14:48:22] [info]  [ 8388] Service 'Tomcat9' installed.
+[2021-02-12 14:48:22] [info]  [ 8388] Apache Commons Daemon procrun finished.

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Context path="/web">
-  <Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="root" connectionPassword="root" connectionURL="jdbc:mysql://localhost:3306/webserver" driverName="com.mysql.jdbc.Driver" roleNameCol="role" userCredCol="passwd" userNameCol="username" userRoleTable="users_roles" userTable="users_roles">
-    <CredentialHandler algorithm="SHA-256" className="org.apache.catalina.realm.MessageDigestCredentialHandler" iterations="1000" keyLength="256" saltLength="8"/>
-  </Realm>
-</Context>

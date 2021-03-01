@@ -1,4 +1,7 @@
-/home/clwn1/Escritorio/TFG/JAAS/WebServer/src/main/java/com/auth/webserver/RolePrincipal.java
-/home/clwn1/Escritorio/TFG/JAAS/WebServer/src/main/java/com/auth/webserver/MyLoginModule.java
-/home/clwn1/Escritorio/TFG/JAAS/WebServer/src/main/java/com/auth/webserver/DB_access.java
-/home/clwn1/Escritorio/TFG/JAAS/WebServer/src/main/java/com/auth/webserver/UserPrincipal.java
+C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\DB_access.java
+C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\UserPrincipal.java
+C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\RolePrincipal.java
+C:\TFG\JAAS\WebServer\src\main\java\Servlets\QRcodeServlet.java
+C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\QRGenerate.java
+C:\TFG\JAAS\WebServer\src\main\java\Servlets\SignUpServlet.java
+C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\MyLoginModule.java

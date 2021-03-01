@@ -17,7 +17,7 @@
           <url-pattern>/admin/*</url-pattern>
       </web-resource-collection>
       <auth-constraint>
-          <role-name>user</role-name>
+          <role-name>admin</role-name>
       </auth-constraint>
   </security-constraint>
 
@@ -31,6 +31,16 @@
   
   <security-role>
       <role-name>user</role-name>
+      <role-name>admin</role-name>
   </security-role>
+  
+  <servlet>
+      <servlet-name>qrcode-servlet</servlet-name>
+      <servlet-class>Servlets.QRcodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>qrcode-servlet</servlet-name>
+      <url-pattern>/QRcodeServlet</url-pattern>
+  </servlet-mapping>
   
 </web-app>
