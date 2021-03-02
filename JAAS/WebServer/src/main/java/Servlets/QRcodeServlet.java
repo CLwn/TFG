@@ -52,40 +52,32 @@ public class QRcodeServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         QRGenerate qr = new QRGenerate();
-        String user = request.getParameter("user");
+        String user = request.getUserPrincipal().getName();
         File f = new File("c:\\TFG\\JAAS\\WebServer\\src\\main\\webapp"
                 + "\\img\\"+user+".jpg");
         String text = user+" public key";
         System.out.println(user);
         try {
-            //DB_access conn = new DB_access();
-            if (true){//conn.SearchValues(user,user)) {
-                qr.generateQR(f, text, 300, 300);
-            }
-            System.out.println("NO HA ENTRADO");
-        } catch (SQLException ex) {
-            Logger.getLogger(QRcodeServlet.class.getName()).log(Level.SEVERE, null, ex);
+            qr.generateQR(f, text, 300, 300);
         } catch (Exception ex) {
-            Logger.getLogger(QRGenerate.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(QRcodeServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         response.setContentType("image/jpeg");
-	ServletOutputStream out;
-	out = response.getOutputStream();
+        ServletOutputStream out;
+        out = response.getOutputStream();
         FileInputStream fin = new FileInputStream("c:\\TFG\\JAAS\\WebServer"
                 + "\\src\\main\\webapp\\img\\"+user+".jpg");
         BufferedInputStream bin = new BufferedInputStream(fin);
-	BufferedOutputStream bout = new BufferedOutputStream(out);
-	int ch =0;
-	while((ch=bin.read())!=-1)
-	{
-	bout.write(ch);
-	}
-	
-	bin.close();
-	fin.close();
-	bout.close();
-	out.close();
+        BufferedOutputStream bout = new BufferedOutputStream(out);
+        int ch =0;
+        while((ch=bin.read())!=-1){
+            bout.write(ch);
+        }
+        bin.close();
+        fin.close();
+        bout.close();
+        out.close();
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

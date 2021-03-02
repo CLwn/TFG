@@ -80,7 +80,8 @@ public class MyLoginModule implements LoginModule {
             //agafem lo que l'usuari ens proporciona per el formulari
             username = ((NameCallback) callbacks[0]).getName();
             password = String.valueOf(((PasswordCallback)callbacks[1]).getPassword());
-            
+            System.out.println(username);
+            System.out.println(username);
             DB_access conn = new DB_access();
             conn.access();
             if(conn.SearchValues(username,SHA512(password))){
@@ -93,7 +94,7 @@ public class MyLoginModule implements LoginModule {
         } catch (SQLException ex) {
             Logger.getLogger(MyLoginModule.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return true;
+        return false;
     }
 
     @Override
