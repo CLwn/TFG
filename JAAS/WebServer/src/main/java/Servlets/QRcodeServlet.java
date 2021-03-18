@@ -5,33 +5,31 @@
  */
 package Servlets;
 
-import com.auth.webserver.DB_access;
+import com.auth.webserver.MyLoginModule;
 import com.auth.webserver.QRGenerate;
-import com.auth.webserver.UserPrincipal;
-import java.awt.Font;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.Image;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.file.attribute.GroupPrincipal;
-import java.sql.Date;
-import java.sql.SQLException;
-import java.text.SimpleDateFormat;
+import java.net.URL;
+import java.security.cert.X509CRL;
+import java.util.Date;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static javafx.scene.text.Font.font;
-import static javax.print.attribute.Size2DSyntax.MM;
+import javax.security.auth.login.LoginException;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.bouncycastle.crypto.prng.drbg.SP80090DRBG;
+import org.cryptacular.generator.Nonce;
+import org.cryptacular.generator.sp80038a.RBGNonce;
+import org.cryptacular.util.NonceUtil;
+
+
 
 /**
  *
@@ -51,12 +49,31 @@ public class QRcodeServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+       
         QRGenerate qr = new QRGenerate();
-        String user = request.getUserPrincipal().getName();
+        Random rand = new Random();
+        long value = rand.nextLong();
+        String result = Long.toHexString(value);
+        System.out.println(result);
+        URL domain = new URL("http://192.168.1.114:8080/QRresponseServlet/");
+        //URL dynamicUrl = new URL(domain+result);
+        //System.out.println(dynamicUrl);
+        String user = request.getParameter("user");
         File f = new File("c:\\TFG\\JAAS\\WebServer\\src\\main\\webapp"
                 + "\\img\\"+user+".jpg");
-        String text = user+" public key";
-        System.out.println(user);
+        Date date = new Date();
+        String url = "http://192.168.1.114:8080/WebServer/QRcodeServlet";
+        Nonce nonce = new RBGNonce(16);
+        byte[] nonceUtil = NonceUtil.randomNonce(16);
+        Nonce nonce1 = new org.cryptacular.generator.sp80038d.RBGNonce();
+        byte[] array = nonce.generate();
+        System.out.println(array);
+        String text = null;
+        for (int i = 0; i<array.length; i++) text = text + array[i];
+        text = text +";"+user+";"+date+";"+url;
+        System.out.println("\n"+user);
+        
+        //String text1 = user+";"+"public key"+";"+";"+date;
         try {
             qr.generateQR(f, text, 300, 300);
         } catch (Exception ex) {
@@ -74,6 +91,12 @@ public class QRcodeServlet extends HttpServlet {
         while((ch=bin.read())!=-1){
             bout.write(ch);
         }
+        
+        MyLoginModule loginModule = new MyLoginModule();
+       
+            //loginModule.login();
+        
+
         bin.close();
         fin.close();
         bout.close();

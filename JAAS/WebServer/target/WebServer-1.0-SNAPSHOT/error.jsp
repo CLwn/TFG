@@ -13,7 +13,7 @@
     </head>
     <body bgcolor="white">
 Usuari o contrasenya invàlida,
-<a href="admin.jsp") %>Tornar</a>.
+<a href="index.html") %>Tornar</a>.
 </body>
 </html>
 

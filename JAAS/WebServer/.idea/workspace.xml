@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e10513d9-b548-47d9-9f34-77a0795f26c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../QR/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QR/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nb-configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/QRcodeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/QRcodeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auth/webserver/DB_access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auth/webserver/DB_access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auth/webserver/MyLoginModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auth/webserver/MyLoginModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/admin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/admin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/marc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/marc.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/pepe.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/pepe.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/classes/Servlets/QRcodeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/classes/Servlets/QRcodeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/classes/com/auth/webserver/DB_access.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/classes/com/auth/webserver/DB_access.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/classes/com/auth/webserver/MyLoginModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/classes/com/auth/webserver/MyLoginModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/img/admin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/img/admin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/img/marc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/img/marc.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/img/pepe.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/img/pepe.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebServer-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/QRcodeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/QRcodeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auth/webserver/DB_access.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/auth/webserver/DB_access.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auth/webserver/MyLoginModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/auth/webserver/MyLoginModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QR/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QR/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QR/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QR/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QR/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QR/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QR/app/src/main/java/com/example/qr/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../QR/app/src/main/java/com/example/qr/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QR/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QR/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QR/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../QR/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QR/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../QR/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tomcat/conf/Catalina/localhost/WebServer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tomcat/conf/Catalina/localhost/WebServer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tomcat/conf/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tomcat/conf/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tomcat/work/Catalina/localhost/WebServer/SESSIONS.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tomcat/work/Catalina/localhost/WebServer/org/apache/jsp/error_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tomcat/work/Catalina/localhost/WebServer/org/apache/jsp/error_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tomcat/work/Catalina/localhost/WebServer/org/apache/jsp/login_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tomcat/work/Catalina/localhost/WebServer/org/apache/jsp/login_jsp.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1po4fXQstoFeLO1YpsX9CLs97zO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e10513d9-b548-47d9-9f34-77a0795f26c7" name="Default Changelist" comment="" />
+      <created>1615836214929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615836214929</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

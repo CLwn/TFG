@@ -73,7 +73,7 @@ public class MyLoginModule implements LoginModule {
         Callback[] callbacks = new Callback[2];
         callbacks[0] = new NameCallback("username");
         callbacks[1] = new PasswordCallback("password", true);
-        
+        System.out.println("hola que ase estic dintre del module");
         try{
             
             handler.handle(callbacks);
@@ -84,7 +84,7 @@ public class MyLoginModule implements LoginModule {
             System.out.println(username);
             DB_access conn = new DB_access();
             conn.access();
-            if(conn.SearchValues(username,SHA512(password))){
+            if(conn.searchValues(username,SHA512(password))){
                 return true;
             }
             
@@ -104,7 +104,7 @@ public class MyLoginModule implements LoginModule {
             DB_access conn = new DB_access();
             conn.access();
             subject.getPrincipals().add(new UserPrincipal(username));
-            subject.getPrincipals().add(new RolePrincipal(conn.SearchRole(username)));
+            subject.getPrincipals().add(new RolePrincipal(conn.searchRole(username)));
             
             return true;
         }catch(Exception e){
@@ -130,7 +130,7 @@ public class MyLoginModule implements LoginModule {
             DB_access conn = new DB_access();
             conn.access();
             subject.getPrincipals().remove(new UserPrincipal(username));
-            subject.getPrincipals().remove(new RolePrincipal(conn.SearchRole(username)));
+            subject.getPrincipals().remove(new RolePrincipal(conn.searchRole(username)));
                  
             return true;
         }catch(Exception e){

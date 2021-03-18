@@ -4,6 +4,7 @@
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
   version="4.0">
+    
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
@@ -50,9 +51,24 @@
       <servlet-name>qrcode-servlet</servlet-name>
       <servlet-class>Servlets.QRcodeServlet</servlet-class>
   </servlet>
+  <servlet>
+      <servlet-name>login-servlet</servlet-name>
+      <servlet-class>Servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>response-servlet</servlet-name>
+      <servlet-class>Servlets.QRresponseServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
       <servlet-name>qrcode-servlet</servlet-name>
-      <url-pattern>/QRcodeServlet</url-pattern>
+      <url-pattern>/QRcodeServlet/*</url-pattern>
   </servlet-mapping>
-  
+  <servlet-mapping>
+      <servlet-name>login-servlet</servlet-name>
+      <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+      <servlet-name>response-servlet</servlet-name>
+      <url-pattern>/QRresponseServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

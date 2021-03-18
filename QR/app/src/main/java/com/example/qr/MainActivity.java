@@ -16,20 +16,33 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.webkit.URLUtil;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.Socket;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
     private CameraSource cameraSource;
     private SurfaceView cameraView;
     private final int MY_PERMISSIONS_REQUEST_CAMERA = 1;
-    private String token = "";
-    private String tokenanterior = "";
+    private String token = "", tokenanterior = "";
+    private Socket user;
+    private PrintWriter show;
+    private int port = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 if (barcodes.size() > 0) {
 
                     //obtenim el token
-                    token = barcodes.valueAt(0).displayValue.toString();
+                    token = barcodes.valueAt(0).displayValue;
 
                     //verifiquem que el token anterior no sigui igual al actual
                     //això es útil per evitar múltiples trucades empleant el mateix token
@@ -120,11 +133,26 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(browserIntent);
                         } else{
                             //comparteix en altres apps
-                            Intent shareIntent = new Intent();
-                            shareIntent.setAction(Intent.ACTION_SEND);
-                            shareIntent.putExtra(Intent.EXTRA_TEXT, token);
-                            shareIntent.setType("text/plain");
-                            startActivity(shareIntent);
+                            //Intent shareIntent = new Intent();
+                            //shareIntent.setAction(Intent.ACTION_SEND);
+                            //shareIntent.putExtra(Intent.EXTRA_TEXT, token);
+                            //shareIntent.setType("text/plain");
+                            //startActivity(shareIntent);
+                            //try {
+                              //  user = new Socket("192.168.1.114", 200);
+                                //show = new PrintWriter(user.getOutputStream());
+                               // show.write(token);
+                                //show.flush();
+                               // user.close();
+                            //} catch (IOException e) {
+                              //  e.printStackTrace();
+                            //}
+                            String[] parts = token.split(";");
+                            String nonce = parts[0];
+                            String user = parts[1];
+                            String date = parts[2];
+                            String urlString = parts[3];
+
                         }
 
                         new Thread(new Runnable() {

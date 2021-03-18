@@ -28,7 +28,7 @@ public class DB_access {
     }
     
     
-    public boolean SearchValues(String name, String pass) throws SQLException{
+    public boolean searchValues(String name, String pass) throws SQLException{
         
         Statement statement = connect.createStatement();
         String query = "SELECT username, password FROM users";
@@ -45,7 +45,7 @@ public class DB_access {
         return false;
     }
 
-    public String SearchRole(String name) throws SQLException {
+    public String searchRole(String name) throws SQLException {
         String query = "SELECT role FROM users_roles WHERE username="+"'"+name+"'";
         Statement statement = connect.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
@@ -57,4 +57,17 @@ public class DB_access {
         return "";
     }
     
+    public Boolean searchIdUser (String user) throws SQLException{
+        String query = "SELECT username, password FROM users";
+        Statement statement = connect.createStatement();
+        ResultSet resultSet = statement.executeQuery(query);
+        
+        while (resultSet.next()) {
+           String dbUsername = resultSet.getString("username");
+            if (dbUsername.equals(user)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

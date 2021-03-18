@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/WebServer">
-    <Realm className="org.apache.catalina.realm.JAASRealm" appName="WebServer"
-		userClassNames="com.auth.webserver.UserPrincipal" roleClassNames="com.auth.webserver.RolePrincipal" />
+  <Realm appName="WebServer" className="org.apache.catalina.realm.JAASRealm" roleClassNames="com.auth.webserver.RolePrincipal" userClassNames="com.auth.webserver.UserPrincipal"/>
 </Context>
