@@ -32,6 +32,8 @@ public class QRresponseServlet extends HttpServlet{
         out.println("<h1>Hola Mundo</h1>");
         out.println("</body>");
         out.println("</html>");
+        
+        System.out.println("he llegado al final de el response");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

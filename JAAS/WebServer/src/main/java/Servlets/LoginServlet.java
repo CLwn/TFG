@@ -5,6 +5,7 @@
  */
 package Servlets;
 
+import Threads.MyThread;
 import com.auth.webserver.DB_access;
 import com.auth.webserver.QRGenerate;
 import java.io.BufferedInputStream;
@@ -20,6 +21,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -39,16 +41,34 @@ public class LoginServlet extends HttpServlet{
             throws ServletException, IOException {
         DB_access conn = new DB_access();
         conn.access();
-
+        String user = request.getParameter("user");
+        request.getSession().setAttribute("user", user);
+        MyThread thread = new MyThread(request.getSession());
+        thread.start();
+        //HttpSession session = request.getSession();
+        //només em de comprovar el nom de user estigui a la BD i ja esta la comprovació de contrasenya es fa més endavant.
         try {
-            if(conn.searchIdUser(request.getParameter("user"))){
-                request.getRequestDispatcher("QRcodeServlet")
-                        .forward(request, response);
+            if(conn.searchIdUser(user)){
+                QRGenerate qr = new QRGenerate();
+                File f = new File("c:\\TFG\\JAAS\\WebServer\\src\\main\\webapp"
+                + "\\img\\"+user+".jpg");
+                qr.generateQR(f, user, 300, 300);
+                //request.getRequestDispatcher("admin/admin.jsp")
+                  //  .forward(request, response);
+                response.sendRedirect("admin/admin.jsp");
             }else response.sendRedirect("error.jsp");
             
         } catch (SQLException ex) {
             Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
+           
+        //No em de fer la comprovació del login aqui sino que simplement redirigirem cap a la pag principal on ens saltarà el login.jsp per fer la comprovació
+        
+        //Per tant aqui hauriem d'activar o ja tindre activar, escoltant la resposta del QR
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

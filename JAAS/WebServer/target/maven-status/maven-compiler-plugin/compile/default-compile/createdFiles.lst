@@ -1,12 +1,14 @@
 Servlets\SignUpServlet.class
 Servlets\QRcodeServlet.class
+com\auth\webserver\UserPrincipal.class
+com\auth\webserver\DB_access.class
+com\auth\webserver\MyCallbackHandler.class
+Threads\MyThread.class
 Servlets\QRresponseServlet.class
 sockets\ControllerMVC.class
 com\auth\webserver\MyLoginModule.class
 com\auth\webserver\QRGenerate.class
 sockets\MainServer.class
 Servlets\LoginServlet.class
-com\auth\webserver\UserPrincipal.class
 com\auth\webserver\RolePrincipal.class
-com\auth\webserver\DB_access.class
 sockets\Connection.class
