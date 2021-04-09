@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                             try {
                                 user = new Socket("192.168.1.114", 400);
                                 show = new PrintWriter(user.getOutputStream());
-                                show.write(token+";"+"marc");
+                                show.write(token);
                                 show.flush();
                                 user.close();
                             } catch (IOException e) {

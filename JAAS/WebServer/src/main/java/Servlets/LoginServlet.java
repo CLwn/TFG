@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -22,6 +23,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import org.cryptacular.generator.Nonce;
+import org.cryptacular.generator.sp80038a.RBGNonce;
 
 /**
  *
@@ -52,7 +55,13 @@ public class LoginServlet extends HttpServlet{
                 QRGenerate qr = new QRGenerate();
                 File f = new File("c:\\TFG\\JAAS\\WebServer\\src\\main\\webapp"
                 + "\\img\\"+user+".jpg");
-                qr.generateQR(f, user, 300, 300);
+                Date date = new Date();
+                Nonce nonce = new RBGNonce(16);
+                byte[] array = nonce.generate();
+                String text = null;
+                for (int i = 0; i<array.length; i++) text = text + array[i];
+                text = text+";"+user+";"+date;
+                qr.generateQR(f, text, 300, 300);
                 //request.getRequestDispatcher("admin/admin.jsp")
                   //  .forward(request, response);
                 response.sendRedirect("admin/admin.jsp");

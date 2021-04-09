@@ -70,4 +70,27 @@ public class DB_access {
         }
         return false;
     }
+    
+    public void updateQRvalue(String user) throws SQLException{
+        String query = "UPDATE users SET session = 1 WHERE username="+"'"+user+"'";
+        Statement statement = connect.createStatement();
+        statement.executeQuery(query);
+        System.out.println("update value");
+    }
+    
+    
+    public Boolean checkQRValue (String user) throws SQLException{
+        String query = "SELECT session FROM users WHERE username="+"'"+user+"'";
+        Statement statement = connect.createStatement();
+        ResultSet resultSet = statement.executeQuery(query);
+        
+        while (resultSet.next()) {
+           int session = resultSet.getInt("session");
+            System.out.println("value of session: "+session);
+            if (session == 1) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

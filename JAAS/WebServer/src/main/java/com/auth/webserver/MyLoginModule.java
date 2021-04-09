@@ -128,13 +128,19 @@ public class MyLoginModule implements LoginModule {
             NameCallback nameCallback = (NameCallback)callbacks[0];
             username = nameCallback.getName();    
             System.out.println(username);
+            DB_access conn = new DB_access();
+            conn.access();
+            if (conn.checkQRValue(username)) return true;
         } catch (IOException ex) {
             Logger.getLogger(MyLoginModule.class.getName()).log(Level.SEVERE, null, ex);
         } catch (UnsupportedCallbackException ex) {
             Logger.getLogger(MyLoginModule.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(MyLoginModule.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return true;
+        
+        return false;
             
        
         //System.out.println(date);
