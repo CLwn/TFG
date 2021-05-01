@@ -1,0 +1,26 @@
+27-Apr-2021 16:07:18.780 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 16:07:19.974 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+27-Apr-2021 16:07:19.974 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+27-Apr-2021 16:07:19.976 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1223467f')
+27-Apr-2021 16:16:58.106 INFORMACIÓN [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 17:37:58.296 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 17:37:59.220 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+27-Apr-2021 17:37:59.220 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+27-Apr-2021 17:37:59.221 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4b4be42c')
+27-Apr-2021 17:41:31.190 INFORMACIÓN [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 17:48:03.619 INFORMACIÓN [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 17:48:21.103 INFORMACIÓN [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 17:48:48.424 INFORMACIÓN [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 17:55:32.306 INFORMACIÓN [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 17:56:42.942 INFORMACIÓN [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:01:14.510 INFORMACIÓN [http-nio-8080-exec-48] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:05:49.662 INFORMACIÓN [http-nio-8080-exec-53] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:08:50.758 INFORMACIÓN [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:16:55.349 INFORMACIÓN [http-nio-8080-exec-72] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:17:00.860 INFORMACIÓN [http-nio-8080-exec-76] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:23:35.193 INFORMACIÓN [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:23:44.300 INFORMACIÓN [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:26:22.201 INFORMACIÓN [http-nio-8080-exec-90] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:27:23.738 INFORMACIÓN [http-nio-8080-exec-93] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:27:29.515 INFORMACIÓN [http-nio-8080-exec-102] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+27-Apr-2021 18:28:07.125 INFORMACIÓN [http-nio-8080-exec-110] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath

@@ -1,0 +1,118 @@
+21-Apr-2021 08:11:47.712 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:11:48.753 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 08:11:48.753 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 08:11:48.754 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@139b9795')
+21-Apr-2021 08:12:41.037 INFORMACIÓN [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:15:51.208 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:15:52.124 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 08:15:52.124 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 08:15:52.125 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1223467f')
+21-Apr-2021 08:16:04.326 INFORMACIÓN [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:16:22.619 INFORMACIÓN [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:24:09.347 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:24:10.251 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 08:24:10.251 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 08:24:10.252 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@26293a52')
+21-Apr-2021 08:32:34.905 INFORMACIÓN [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:32:36.822 INFORMACIÓN [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:33:56.932 INFORMACIÓN [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:34:07.815 GRAVE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [Jersey REST Service] en el contexto con ruta [/WebServer] lanzó la excepción [javax.ws.rs.ProcessingException: org.apache.catalina.connector.ClientAbortException: java.io.EOFException: Inesperado Fin De Archivo (EOF) leído en el enchufe (socket)] con causa raíz
+	java.io.EOFException: Inesperado Fin De Archivo (EOF) leído en el enchufe (socket)
+		at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:788)
+		at org.apache.coyote.http11.Http11InputBuffer.access$300(Http11InputBuffer.java:42)
+		at org.apache.coyote.http11.Http11InputBuffer$SocketInputBuffer.doRead(Http11InputBuffer.java:1133)
+		at org.apache.coyote.http11.filters.ChunkedInputFilter.readBytes(ChunkedInputFilter.java:301)
+		at org.apache.coyote.http11.filters.ChunkedInputFilter.parseChunkHeader(ChunkedInputFilter.java:329)
+		at org.apache.coyote.http11.filters.ChunkedInputFilter.doRead(ChunkedInputFilter.java:164)
+		at org.apache.coyote.http11.Http11InputBuffer.doRead(Http11InputBuffer.java:249)
+		at org.apache.coyote.Request.doRead(Request.java:551)
+		at org.apache.catalina.connector.InputBuffer.realReadBytes(InputBuffer.java:336)
+		at org.apache.catalina.connector.InputBuffer.checkByteBufferEof(InputBuffer.java:632)
+		at org.apache.catalina.connector.InputBuffer.readByte(InputBuffer.java:350)
+		at org.apache.catalina.connector.CoyoteInputStream.read(CoyoteInputStream.java:84)
+		at org.glassfish.jersey.message.internal.EntityInputStream.isEmpty(EntityInputStream.java:200)
+		at org.glassfish.jersey.message.internal.InboundMessageContext.hasEntity(InboundMessageContext.java:772)
+		at org.glassfish.jersey.servlet.WebComponent.filterFormParameters(WebComponent.java:670)
+		at org.glassfish.jersey.servlet.WebComponent.initContainerRequest(WebComponent.java:520)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+21-Apr-2021 08:37:41.645 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:37:42.535 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 08:37:42.535 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 08:37:42.536 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@26293a52')
+21-Apr-2021 08:38:21.981 INFORMACIÓN [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:40:44.644 INFORMACIÓN [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:41:28.373 INFORMACIÓN [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:44:39.917 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 08:44:39.917 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 08:44:39.918 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@455082d2')
+21-Apr-2021 08:44:55.900 INFORMACIÓN [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:45:53.573 INFORMACIÓN [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:50:11.988 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 08:50:11.988 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 08:50:11.989 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@219c32e3')
+21-Apr-2021 08:50:13.424 INFORMACIÓN [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:51:46.180 INFORMACIÓN [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 08:51:56.494 INFORMACIÓN [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:05:45.030 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:05:45.923 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 09:05:45.923 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 09:05:45.924 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1223467f')
+21-Apr-2021 09:06:14.590 INFORMACIÓN [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:27:40.684 INFORMACIÓN [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:53:09.548 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:53:10.459 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 09:53:10.459 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 09:53:10.460 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1223467f')
+21-Apr-2021 09:53:43.202 INFORMACIÓN [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:54:05.877 INFORMACIÓN [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:54:20.626 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:54:21.577 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 09:54:21.577 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 09:54:21.578 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@57d6d605')
+21-Apr-2021 09:55:46.305 INFORMACIÓN [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:56:12.122 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:56:12.997 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 09:56:12.997 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 09:56:12.998 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@57d6d605')
+21-Apr-2021 09:58:01.936 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 09:58:01.936 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 09:58:01.937 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@39da0e47')
+21-Apr-2021 09:58:24.543 INFORMACIÓN [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:58:59.233 INFORMACIÓN [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:59:16.876 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:59:17.789 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 09:59:17.789 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 09:59:17.790 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@57d6d605')
+21-Apr-2021 09:59:27.479 INFORMACIÓN [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:59:53.862 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 09:59:54.768 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Apr-2021 09:59:54.768 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Apr-2021 09:59:54.769 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@57d6d605')
+21-Apr-2021 10:00:51.047 INFORMACIÓN [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+21-Apr-2021 10:01:05.237 INFORMACIÓN [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath

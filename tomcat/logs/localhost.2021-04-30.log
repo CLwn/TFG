@@ -1,0 +1,8 @@
+30-Apr-2021 16:31:24.249 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+30-Apr-2021 16:31:25.347 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 16:31:25.347 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 16:31:25.348 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4afafd11')
+30-Apr-2021 16:31:44.002 INFORMACIÓN [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+30-Apr-2021 16:32:41.274 INFORMACIÓN [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+30-Apr-2021 17:06:44.468 INFORMACIÓN [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+30-Apr-2021 17:18:31.050 INFORMACIÓN [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath

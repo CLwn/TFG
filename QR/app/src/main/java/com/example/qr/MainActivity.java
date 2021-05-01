@@ -1,3 +1,4 @@
+
 package com.example.qr;
 
 import androidx.annotation.NonNull;
@@ -14,9 +15,14 @@ import android.util.Log;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.webkit.URLUtil;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
+import com.example.qr.data.DataModal;
+import com.example.qr.data.remote.RetrofitAPI;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.barcode.Barcode;
@@ -29,6 +35,12 @@ import java.io.PrintWriter;
 
 import java.net.Socket;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private Socket user;
     private PrintWriter show;
     private int port = 0;
+    private TextView test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         cameraView = (SurfaceView) findViewById(R.id.camera_view);
+        test = findViewById(R.id.test);
         initQR();
     }
 
@@ -127,26 +141,13 @@ public class MainActivity extends AppCompatActivity {
                             //si es una url vàlida obre el navegador
                             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(token));
                             startActivity(browserIntent);
-                        } else{
-                            //comparteix en altres apps
-                            //Intent shareIntent = new Intent();
-                            //shareIntent.setAction(Intent.ACTION_SEND);
-                            //shareIntent.putExtra(Intent.EXTRA_TEXT, token);
-                            //shareIntent.setType("text/plain");
-                            //startActivity(shareIntent);
-                            try {
-                                user = new Socket("192.168.1.114", 400);
-                                show = new PrintWriter(user.getOutputStream());
-                                show.write(token);
-                                show.flush();
-                                user.close();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
+                        } else {
+
+                            postData("marc");
 
                         }
 
-                        new Thread(new Runnable() {
+                            new Thread(new Runnable() {
                             @Override
                             public void run() {
                                 try {
@@ -167,6 +168,63 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void postData(String name) {
 
+        // below line is for displaying our progress bar.
+        //loadingPB.setVisibility(View.VISIBLE);
 
+        // on below line we are creating a retrofit
+        // builder and passing our base url
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://192.168.1.114:8080/WebServer/webresources/")
+                // as we are sending data in json format so
+                // we have to add Gson converter factory
+                .addConverterFactory(GsonConverterFactory.create())
+                // at last we are building our retrofit builder.
+                .build();
+        // below line is to create an instance for our retrofit api class.
+        RetrofitAPI retrofitAPI = retrofit.create(RetrofitAPI.class);
+
+        // passing data from our text fields to our modal class.
+        DataModal modal = new DataModal(name);
+
+        // calling a method to create a post and passing our modal class.
+        Call<DataModal> call = retrofitAPI.createPost(modal);
+
+        // on below line we are executing our method.
+        call.enqueue(new Callback<DataModal>() {
+            @Override
+            public void onResponse(Call<DataModal> call, Response<DataModal> response) {
+                // this method is called when we get response from our api.
+                Toast.makeText(MainActivity.this, "Data added to API", Toast.LENGTH_SHORT).show();
+
+                // below line is for hiding our progress bar.
+                //loadingPB.setVisibility(View.GONE);
+
+                // on below line we are setting empty text
+                // to our both edit text.
+                //jobEdt.setText("");
+                //nameEdt.setText("");
+
+                // we are getting response from our body
+                // and passing it to our modal class.
+                DataModal responseFromAPI = response.body();
+
+                // on below line we are getting our data from modal class and adding it to our string.
+                String responseString = "Response Code : " + response.code() + "\nName : " + responseFromAPI.getUsername();
+
+                // below line we are setting our
+                // string to our text view.
+                test.setText(responseString);
+            }
+
+            @Override
+            public void onFailure(Call<DataModal> call, Throwable t) {
+                // setting text to our text view when
+                // we get error response from API.
+                test.setText("Error found is : " + t.getMessage());
+            }
+        });
+
+    }
 }

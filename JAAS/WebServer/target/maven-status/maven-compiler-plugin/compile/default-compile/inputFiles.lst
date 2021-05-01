@@ -1,14 +1,13 @@
 C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\DB_access.java
 C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\UserPrincipal.java
-C:\TFG\JAAS\WebServer\src\main\java\sockets\Connection.java
-C:\TFG\JAAS\WebServer\src\main\java\sockets\ControllerMVC.java
+C:\TFG\JAAS\WebServer\src\main\java\com\rest\AuthQR.java
 C:\TFG\JAAS\WebServer\src\main\java\Threads\MyThread.java
 C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\MyLoginModule.java
-C:\TFG\JAAS\WebServer\src\main\java\sockets\MainServer.java
 C:\TFG\JAAS\WebServer\src\main\java\Servlets\QRresponseServlet.java
 C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\RolePrincipal.java
 C:\TFG\JAAS\WebServer\src\main\java\Servlets\QRcodeServlet.java
 C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\QRGenerate.java
 C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\MyCallbackHandler.java
+C:\TFG\JAAS\WebServer\src\main\java\com\auth\webserver\Tryout.java
 C:\TFG\JAAS\WebServer\src\main\java\Servlets\SignUpServlet.java
 C:\TFG\JAAS\WebServer\src\main\java\Servlets\LoginServlet.java
